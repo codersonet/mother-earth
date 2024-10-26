@@ -50,7 +50,7 @@ body {
     animation: tree-draw 5s ease-in-out forwards;
     }
 
-/* Animation for tracing the tree outline */
+/* Animation for tracing the earth outline */
     @keyframes tree-draw {
     0% {
         stroke-dasharray: 0, 100;
