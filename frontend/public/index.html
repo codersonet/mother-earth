@@ -1,1 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="School project">
+    <meta name="keywords" content="3D globe, Earth, space, topography, weather forecast, atmospheric pressure, celestial bodies, real-time data, interactive globe, temperature, environmental data, astronomy">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Decentralized Energy Trading Platform</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="%PUBLIC_URL%/images/favicon-logo.ico" />
+    
+    <!-- Meta Description -->
+    <meta name="description" content="Explore Earth and beyond with our interactive 3D AI globe. Get real-time topography, celestial body information, atmospheric pressure, current weather, a 7-day weather forecast for any location and many kore. Discover the Earth like never before!">
+    
+    <!-- Open Graph Meta Tags (for Facebook, LinkedIn, etc.) -->
+    <meta property="og:title" content="Mother Earth" />
+    <meta property="og:description" content="Explore Earth and beyond with our interactive 3D AI globe. Get real-time topography, celestial body information, atmospheric pressure, current weather, a 7-day weather forecast for any location and many more. Discover the universe like never before!" />
+    <meta property="og:image" content="%PUBLIC_URL%/images/og-image.png" />
+    <meta property="og:url" content="https://motherearth.in" />
+    <meta property="og:type" content="website" />
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Mother Earth" />
+    <meta name="twitter:description" content="Explore Earth and beyond with our interactive 3D AI globe. Get real-time topography, celestial body information, atmospheric pressure, current weather, a 7-day weather forecast for any location and many more. Discover the Earth like never before!" />
+    <meta name="twitter:image" content="%PUBLIC_URL%/images/twitter-image.png" />
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    
+    <!-- Custom Stylesheet (Optional) -->
+    <link rel="stylesheet" href="%PUBLIC_URL%/styles.css" />
+    
+    <!-- Inline CSS for loading spinner 
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+        background-color: black;
+        color: white;
+      }
+      
+      /* Loading spinner styles */
+      #loading-spinner {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 150px;
+        height: 150px;
+        border: 2px solid transparent;
+        border-radius: 50%;
+        border-top: 2px solid #32CD32; /* LimeGreen for earth outline */
+        animation: spin 1s linear infinite;
+      }
 
+      /* Animation for rotating the earth outline */
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      /* Style for loading message */
+      #loading-message {
+        position: fixed;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        font-size: 18px;
+      }
+
+      /* Placeholder for the earth image */
+      #tree-outline {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background-image: url('%PUBLIC_URL%/earth-outline.png'); /* Use your earth outline image */
+        background-size: contain;
+        background-repeat: no-repeat;
+        animation: tree-draw 5s ease-in-out forwards;
+      }
+
+      /* Animation for tracing the tree outline */
+      @keyframes tree-draw {
+        0% {
+          stroke-dasharray: 0, 100;
+        }
+        100% {
+          stroke-dasharray: 100, 0;
+        }
+      }
+    </style> -->
+  </head>
+
+  <body>
+    <!-- React will mount on this div -->
+    <div id="root"></div>
+
+    <!-- Loading spinner while React is initializing -->
+    <div id="loading-spinner">
+      <div id="earth-outline"></div>
+    </div>
+    <div id="loading-message">
+      Loading... Please wait while we optimize your blue screen experience.
+    </div>
+    
+    <!-- Optional: Add external scripts if needed -->
+    <script src="%PUBLIC_URL%/script.js"></script>
+  </body>
+</html>
